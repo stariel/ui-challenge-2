@@ -4,22 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
     <title>UI Challenge - Custom Form Elements</title>
 </head>
 <body>
     <form>
-        <input type="text" name="text input" placeholder="placeholder text">
-        <select name="select">
-            <option value="option 1">option 1</option>
-            <option value="option 2">option 2</option>
-            <option value="option 3">option 3</option>
-            <option value="option 4">option 4</option>
-            <option value="option 5">option 5</option>
-        </select>
-        <input type="checkbox">
-        <input type="radio">
-        <input type="submit" value="submit">
+        <ul>
+            <li><input type="text" name="text input" placeholder="placeholder text" required></li>
+            <li><select name="select">
+                    <option id="select" disabled selected value>please select an option</option>
+                    <option value="option 1">option 1</option>
+                    <option value="option 2">option 2</option>
+                    <option value="option 3">option 3</option>
+                    <option value="option 4">option 4</option>
+                    <option value="option 5">option 5</option>
+                </select></li>
+            <li><input type="checkbox"></li>
+            <li><input type="radio"></li>
+            <li><input type="submit" value="submit"></li>
+        </ul>
     </form>
-    
 </body>
 </html>
